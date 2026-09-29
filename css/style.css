@@ -62,24 +62,95 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .logo {
-    margin-top: 40px;
+    margin-top: 30px;
     height: 19px;
 }
 nav {
     display: flex;
-    align-items: top;
+    align-items: flex-start;
     gap: 68px;
 }
 .nav-hebergements, .nav-activites {
     padding-top: 19px;
+    border-top: 2px solid transparent;
 }
 .nav-hebergements:hover, .nav-activites:hover {
     color: var(--main-color);
-    border-top: 2px solid var(--main-color);
+    border-color: var(--main-color);   
 }
+
+/****** Recherche ***********/
+
+.recherche-title{
+    margin: 0;
+    font-size: 22px;
+}
+
+.recherche-subtitle {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+.barre-recherche {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: var(--main-bg-color);
+}
+
+.recherche-form {
+    display: flex; 
+    align-items: center;
+}
+
+.recherche-label .fa-solid {
+    color: black;
+}
+
+.recherche-label {
+    margin: 0 15px 0 15px;
+}
+.recherche-input {
+    border: none;
+    background-color: white;
+    padding: 15px 10px 15px 25px;
+}
+
+.recherche-input::placeholder {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.recherche-button {
+    background-color: var(--main-color);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: white; 
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /****** Hebergements And Populaires ***********/
