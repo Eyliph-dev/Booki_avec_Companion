@@ -26,17 +26,36 @@
         </header>
         <main>
             <section class="recherche">
-                <h1 class="recherche-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="recherche-subtitle">En plein centre-ville ou en pleine nature</p>
-                <div class="barre-recherche">
+                <form class="recherche-form" action="#" method="get">
+                    <label class="recherche-label" for="destination"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span class="sr-only">Destination</span>
+                    </label>
+                    <input class="recherche-input" type="text" name="destination" id="destination" placeholder="Marseille, France">
+                    <button class="recherche-button" type="submit">Rechercher</button>
+                </form>
 
-                    <form class="recherche-form" action="#" method="get">
-                        <label class="recherche-label" for="destination"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                            <span class="sr-only">Destination</span>
-                        </label>
-                        <input class="recherche-input" type="text" name="destination" id="destination" placeholder="Marseille, France">
-                        <button class="recherche-button" type="submit">Rechercher</button>
-                    </form>
+                <div class="filtres">
+                    <span class="filtres-title">Filtres</span>
+                    <ul class="filtres-items">
+                        <li class="filtres-items-component">
+                            <i class="fa-solid fa-money-bill-wave" aria-hidden="true"></i>
+                            <span>Économique</span>
+                        </li>
+                        <li class="filtres-items-component">
+                            <i class="fa-solid fa-person" aria-hidden="true"></i>
+                            <span>Familial</span>
+                        </li>
+                        <li class="filtres-items-component">
+                            <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                            <span>Romantique</span>
+                        </li>
+                        <li class="filtres-items-component">
+                            <i class="fa-solid fa-fire" aria-hidden="true"></i>
+                            <span>Nos pépites</span>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <div class="hebergements-and-populaires">
@@ -45,7 +64,7 @@
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
-                        <h2 class="section-title">Les plus populaires</h2>
+                        <h1 class="section-title">Les plus populaires</h1>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
