@@ -176,9 +176,30 @@ nav {
 
 .filtres-items-component:hover {
     background-color: var(--filter-bg-color);
-
 }
 
+/****** Recherche Information ***********/
+.recherche-information {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.recherche-information .fa-solid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.recherche-information-txt {
+    margin: 0;
+}
 
 
 
