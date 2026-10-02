@@ -354,6 +354,36 @@ nav {
     padding: 20px;
 }
 
+/****** Footer ***********/
+.footer-content {
+    display: flex;
+    align-items: flex-start;
+    background-color: var(--main-bg-color);
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3);
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer-section-title {
+    font-size: 18px;
+    margin: 0;
+}
+
+.footer-section ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
