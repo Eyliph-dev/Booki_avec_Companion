@@ -118,10 +118,9 @@ nav {
 }
 
 .recherche-input {
+    border: hidden;
     border-bottom: 1px solid var(--main-bg-color);
     border-top: 1px solid var(--main-bg-color);
-    border-left: hidden;
-    border-right: hidden;
     background-color: white;
     padding: 15px 10px 15px 25px;
     font-size: 16px;
@@ -152,7 +151,6 @@ nav {
     display: flex;
     margin-bottom: 30px;
     align-items: center;
-
 }
 
 .filtres-items {
@@ -160,7 +158,6 @@ nav {
     margin: 0;
     gap: 20px;
     padding-left: 20px;
-
 }
 
 .filtres-items-component {
@@ -208,8 +205,6 @@ nav {
     margin: 0;
 }
 
-
-
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -226,7 +221,6 @@ nav {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    align-content: space-around;
 }
 
 .hebergements .section-title {
