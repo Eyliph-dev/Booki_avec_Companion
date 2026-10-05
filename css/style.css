@@ -89,6 +89,7 @@ nav {
 .nav-hebergements, .nav-activites {
     padding-top: 19px;
     border-top: 2px solid transparent;
+    font-size: 16px;
 }
 .nav-hebergements:hover, .nav-activites:hover {
     color: var(--main-color);
@@ -97,13 +98,14 @@ nav {
 
 /****** Recherche ***********/
 .recherche-subtitle {
+    font-size: 16px;
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
 .recherche-form {
     display: inline-flex;
-    align-items: center;
+    align-items: stretch;
     margin-bottom: 40px;
     border-radius: 15px;
     background-color: var(--main-bg-color);
@@ -114,18 +116,19 @@ nav {
 }
 
 .recherche-label {
-    margin: 0 20px 0 20px;
+    margin: 16px 20px 0 20px;
+    font-size: 18px;
 }
 
 .recherche-input {
-    border: hidden;
+    border: none;
     border-bottom: 1px solid var(--main-bg-color);
     border-top: 1px solid var(--main-bg-color);
     background-color: white;
-    padding: 15px 10px 15px 25px;
-    font-size: 16px;
+    padding: 14px 24px;
+    font-size: 18px;
     font-weight: bold;
-    width: 145px;
+    width: 147px;
     outline-color: var(--main-color);
 }
 
@@ -136,13 +139,13 @@ nav {
 .recherche-button {
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
-    border-left: hidden;
-    border-right: hidden;
+    border-left: none;
+    border-right: none;
     padding: 15px;
     cursor: pointer;
     border-radius: 0 15px 15px 0;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     color: white;
 }
 
@@ -165,7 +168,7 @@ nav {
     align-items: center;
     border: 2px solid lightgray;
     border-radius: 50px;
-    padding: 10px 25px 10px 25px;
+    padding: 15px 19px;
     column-gap: 15px;
 }
 
@@ -176,6 +179,11 @@ nav {
 
 .filtres-items-component i{
     font-size: 25px;
+}
+
+.filtres-items-component span{
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .filtres-items-component:hover {
@@ -237,6 +245,11 @@ nav {
     width: calc((100% - 60px) / 3);
 }
 
+.hebergements-cards .card {
+    height: 100%;
+    box-sizing: border-box;
+}
+
 .hebergements-cards img {
     width: 100%;
     height: 114px;
@@ -258,6 +271,7 @@ nav {
 }
 
 .hebergements-cards .card-subtitle {
+    font-size: 14px;
     margin: 0;
     margin-bottom: 8px;
 }
@@ -311,6 +325,7 @@ nav {
 }
 
 .populaires-cards .card-subtitle {
+    font-size: 14px;
     margin: 0;
 }
 
@@ -384,6 +399,7 @@ nav {
     padding: 0;
     margin: 0;
     gap: 15px;
+    font-size: 16px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
