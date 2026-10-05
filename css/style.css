@@ -209,7 +209,8 @@ nav {
     height: 25px;
 }
 
-.recherche-information-txt {
+.recherche-information p{
+    font-size: 16px;
     margin: 0;
 }
 
