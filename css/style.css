@@ -184,6 +184,7 @@ nav {
 .filtres-items-component {
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 2px solid lightgray;
     border-radius: 50px;
     padding: 15px 19px;
@@ -191,7 +192,7 @@ nav {
 }
 
 .filtres-items-component i{
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .filtres-items-component span{
@@ -460,14 +461,6 @@ footer {
         width: 32%;
     }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-
     /* Activités */
     .activites-cards img {
         height: 199px;
@@ -487,11 +480,6 @@ footer {
         align-items: center;
         flex-direction: column;
         margin-bottom: 30px;
-    }
-
-    .logo {
-        height: 10%;
-        width: 10%;
     }
 
     nav {
@@ -543,6 +531,8 @@ footer {
     .filtres-items-component {
         box-sizing: border-box;
         width: calc((100% - 10px) / 2);
+        padding: 15px 9px;
+        column-gap: 10px;
     }
 
     .filtres-items-component span{
