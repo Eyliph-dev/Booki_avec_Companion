@@ -19,10 +19,10 @@ body {
     margin: 0;
 }
 
-
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -65,6 +65,7 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
 /* Masque un texte à l'écran mais reste lisible par les lecteurs d'écran */
 .sr-only {
     position: absolute;
@@ -82,22 +83,26 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
+
 .logo {
-    margin-top: 30px;
+    margin: 30px 0;
     height: 19px;
 }
+
 nav {
     display: flex;
     align-items: flex-start;
     gap: 68px;
 }
+
 .nav-hebergements, .nav-activites {
     padding-top: 19px;
     border-top: 2px solid transparent;
     font-size: 16px;
 }
+
 .nav-hebergements:hover, .nav-activites:hover {
     color: var(--main-color);
     border-color: var(--main-color);
@@ -109,14 +114,14 @@ nav {
     flex-direction: column;
     gap: 35px;
 }
+
 .recherche-subtitle {
     font-size: 16px;
     margin-top: 10px;
 }
 
 .recherche-form {
-    display: inline-flex;
-    align-items: stretch;
+    display: flex;
 }
 
 .recherche-label .fa-solid {
@@ -124,9 +129,11 @@ nav {
 }
 
 .recherche-label {
+    display: flex;
+    align-items: center;
     background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
-    padding: 16px 20px 0 20px;
+    padding: 0 20px;
     font-size: 18px;
 }
 
@@ -195,7 +202,7 @@ nav {
     font-size: 22px;
 }
 
-.filtres-items-component span{
+.filtres-items-component span {
     font-size: 17px;
     font-weight: bold;
 }
@@ -222,7 +229,7 @@ nav {
     height: 25px;
 }
 
-.recherche-information p{
+.recherche-information .recherche-information-txt {
     font-size: 16px;
     margin: 0;
 }
@@ -280,8 +287,8 @@ nav {
 }
 
 .hebergements-cards .card-title {
-    margin-top: 4px;
-    margin-bottom: 8px;
+    margin: 4px 0 8px 0;
+
 }
 
 .hebergements-cards .card-subtitle {
@@ -446,7 +453,7 @@ footer {
         font-size: 21px;
     }
 
-    .filtres-items-component span{
+    .filtres-items-component span {
         font-size: 16px;
     }
 
@@ -489,10 +496,8 @@ footer {
 
     /* Header */
     header {
-        display: flex;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 30px;
     }
 
     nav {
@@ -506,6 +511,7 @@ footer {
         width: 50%;
         border-bottom: 2px solid var(--main-bg-color);
         border-top: none;
+        padding-top: 0;
         padding-bottom: 15px;
     }
 
@@ -538,7 +544,9 @@ footer {
     /* filtres */
     .filtres-items {
         column-gap: 10px;
+        align-self: center;
     }
+
 
     .filtres-items-component {
         box-sizing: border-box;
@@ -547,7 +555,7 @@ footer {
         column-gap: 10px;
     }
 
-    .filtres-items-component span{
+    .filtres-items-component span {
         font-size: 14px;
     }
 
